@@ -18,7 +18,30 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   
-  [[DNDispatcher dispatcher].defaultTabbarController navigationController];
+  UIViewController *controller = [[UIViewController alloc]init];
+  controller.view.backgroundColor = [UIColor orangeColor];
+
+  [[DNDispatcher dispatcher].alertViewController clearColor];
+  
+  //show it
+  [DNDispatcher dispatcher].alertViewController.show(controller);
+  
+  //hide it
+  [[DNDispatcher dispatcher].alertViewController hide];
+  
+
+  
+  
+  [DNDispatcher dispatcher].rootViewController.replaceRootControllerWithController(controller);
+  
+  [DNDispatcher dispatcher].defaultTabbarController.pushViewController(controller);
+  
+  // or
+  
+  [DNDispatcher dispatcher].defaultNavigationController.pushViewController(controller);
+  
+
+
 }
 
 - (void)didReceiveMemoryWarning {
