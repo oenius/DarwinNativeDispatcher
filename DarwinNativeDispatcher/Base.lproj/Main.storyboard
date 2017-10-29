@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GaS-OM-bLw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="brt-Fa-ZHx">
+            <objects>
+                <tabBarController id="GaS-OM-bLw" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0L8-Kj-5bw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jAy-V5-C6g" kind="relationship" relationship="viewControllers" id="daH-JF-4N2"/>
+                        <segue destination="Fxj-Jo-Acd" kind="relationship" relationship="viewControllers" id="laV-Q5-3kF"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jsU-Sp-pO5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1525" y="-264"/>
+        </scene>
+        <!--First-->
+        <scene sceneID="n03-uB-fy3">
+            <objects>
+                <navigationController id="jAy-V5-C6g" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="First" id="kvG-t1-Pts">
+                        <color key="badgeColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="yAi-JC-7sk">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="vQN-rw-ppL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UwL-HT-QN8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="-590"/>
+        </scene>
+        <!--Second-->
+        <scene sceneID="o8V-cf-367">
+            <objects>
+                <navigationController id="Fxj-Jo-Acd" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Second" id="MS5-Rv-oJa">
+                        <color key="badgeColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TSd-QX-xdt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O0m-fZ-8HV" kind="relationship" relationship="rootViewController" id="GRY-g3-wtc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ydh-nl-hvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-316" y="79"/>
+        </scene>
+        <!--I am Tab 0-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="I am Tab 0" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kv9-Bi-mga">
+                                <rect key="frame" x="0.0" y="64" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Show Alert Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleShowAlertController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lRm-Qa-v1M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0al-vS-EgI">
+                                <rect key="frame" x="0.0" y="175" width="375" height="110.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Hide Alert Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleHideAlertController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yLE-rt-05s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foL-U0-Ccr">
+                                <rect key="frame" x="0.0" y="285.5" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Replace Root Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleReplaceRootController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uQx-9a-lSb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axc-nf-bAh">
+                                <rect key="frame" x="0.0" y="396.5" width="375" height="110.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tab Bar Push Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePushTabBarController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M9n-e7-saE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-Ei-ruI">
+                                <rect key="frame" x="0.0" y="507" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Natvion Push Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePushController:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oGS-70-S1L"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="axc-nf-bAh" firstAttribute="top" secondItem="foL-U0-Ccr" secondAttribute="bottom" id="1UG-NZ-0ia"/>
+                            <constraint firstItem="foL-U0-Ccr" firstAttribute="leading" secondItem="qwj-Gt-DJC" secondAttribute="leading" id="41l-nu-G9o"/>
+                            <constraint firstItem="axc-nf-bAh" firstAttribute="leading" secondItem="qwj-Gt-DJC" secondAttribute="leading" id="5Za-9f-mMq"/>
+                            <constraint firstItem="dsD-Ei-ruI" firstAttribute="leading" secondItem="qwj-Gt-DJC" secondAttribute="leading" id="5aF-m4-beZ"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="trailing" secondItem="0al-vS-EgI" secondAttribute="trailing" id="7YZ-Mp-yEU"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="trailing" secondItem="foL-U0-Ccr" secondAttribute="trailing" id="B6T-7c-nN2"/>
+                            <constraint firstItem="0al-vS-EgI" firstAttribute="leading" secondItem="qwj-Gt-DJC" secondAttribute="leading" id="Ci8-SP-ldI"/>
+                            <constraint firstItem="foL-U0-Ccr" firstAttribute="height" secondItem="Kv9-Bi-mga" secondAttribute="height" id="EWG-i1-xDE"/>
+                            <constraint firstItem="axc-nf-bAh" firstAttribute="width" secondItem="Kv9-Bi-mga" secondAttribute="width" id="IgE-jX-kVj"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="trailing" secondItem="Kv9-Bi-mga" secondAttribute="trailing" id="PAN-XU-POK"/>
+                            <constraint firstItem="foL-U0-Ccr" firstAttribute="width" secondItem="Kv9-Bi-mga" secondAttribute="width" id="QlX-Zx-o7V"/>
+                            <constraint firstItem="0al-vS-EgI" firstAttribute="height" secondItem="Kv9-Bi-mga" secondAttribute="height" id="Rop-3N-zF6"/>
+                            <constraint firstItem="dsD-Ei-ruI" firstAttribute="top" secondItem="axc-nf-bAh" secondAttribute="bottom" id="UCT-GS-KR2"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="trailing" secondItem="dsD-Ei-ruI" secondAttribute="trailing" id="YBP-Yt-m3b"/>
+                            <constraint firstItem="0al-vS-EgI" firstAttribute="width" secondItem="Kv9-Bi-mga" secondAttribute="width" id="bPI-Ng-Z06"/>
+                            <constraint firstItem="Kv9-Bi-mga" firstAttribute="leading" secondItem="qwj-Gt-DJC" secondAttribute="leading" id="cOR-Ic-VCn"/>
+                            <constraint firstItem="dsD-Ei-ruI" firstAttribute="width" secondItem="Kv9-Bi-mga" secondAttribute="width" id="gMp-hc-y4F"/>
+                            <constraint firstItem="dsD-Ei-ruI" firstAttribute="height" secondItem="Kv9-Bi-mga" secondAttribute="height" id="hIC-NK-djB"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="bottom" secondItem="dsD-Ei-ruI" secondAttribute="bottom" id="hZd-pz-4WC"/>
+                            <constraint firstItem="Kv9-Bi-mga" firstAttribute="top" secondItem="qwj-Gt-DJC" secondAttribute="top" id="nJc-N3-N33"/>
+                            <constraint firstItem="axc-nf-bAh" firstAttribute="height" secondItem="Kv9-Bi-mga" secondAttribute="height" id="tyX-7h-Uoh"/>
+                            <constraint firstItem="qwj-Gt-DJC" firstAttribute="trailing" secondItem="axc-nf-bAh" secondAttribute="trailing" id="wh6-Qr-4KC"/>
+                            <constraint firstItem="0al-vS-EgI" firstAttribute="top" secondItem="Kv9-Bi-mga" secondAttribute="bottom" id="yta-It-aF7"/>
+                            <constraint firstItem="foL-U0-Ccr" firstAttribute="top" secondItem="0al-vS-EgI" secondAttribute="bottom" id="zCX-Rd-tfJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="qwj-Gt-DJC"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="First Tab " id="vi2-rc-sO8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="826" y="-589"/>
+        </scene>
+        <!--I am Tab 1-->
+        <scene sceneID="KTi-kf-YWN">
+            <objects>
+                <viewController title="I am Tab 1" id="O0m-fZ-8HV" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fgo-ar-SAy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0NX-1Y-orM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="110.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Show Alert Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleShowAlertController:" destination="O0m-fZ-8HV" eventType="touchUpInside" id="yl9-AR-k0a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ti7-gy-85P">
+                                <rect key="frame" x="0.0" y="174.5" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Hide Alert Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleHideAlertController:" destination="O0m-fZ-8HV" eventType="touchUpInside" id="cRO-K9-T0i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zab-HA-wIa">
+                                <rect key="frame" x="0.0" y="285.5" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Replace Root Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toggleReplaceRootController:" destination="O0m-fZ-8HV" eventType="touchUpInside" id="k7y-NN-bdf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lv0-fH-HGf">
+                                <rect key="frame" x="0.0" y="396.5" width="375" height="111"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Tab Bar Push Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePushTabBarController:" destination="O0m-fZ-8HV" eventType="touchUpInside" id="JKD-aN-sY4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZC9-jh-A1g">
+                                <rect key="frame" x="0.0" y="507.5" width="375" height="110.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Natvion Push Controller">
+                                    <color key="titleColor" red="0.93333333330000001" green="0.23529411759999999" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="togglePushController:" destination="O0m-fZ-8HV" eventType="touchUpInside" id="TsT-6J-e0j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Ti7-gy-85P" firstAttribute="leading" secondItem="WMZ-2u-vZk" secondAttribute="leading" id="2uj-lF-HDQ"/>
+                            <constraint firstItem="Ti7-gy-85P" firstAttribute="top" secondItem="0NX-1Y-orM" secondAttribute="bottom" id="3W7-4D-11c"/>
+                            <constraint firstItem="0NX-1Y-orM" firstAttribute="leading" secondItem="WMZ-2u-vZk" secondAttribute="leading" id="52s-Nh-ZbY"/>
+                            <constraint firstItem="lv0-fH-HGf" firstAttribute="height" secondItem="0NX-1Y-orM" secondAttribute="height" id="7tb-95-XVe"/>
+                            <constraint firstItem="ZC9-jh-A1g" firstAttribute="top" secondItem="lv0-fH-HGf" secondAttribute="bottom" id="9lE-EV-oDg"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="trailing" secondItem="0NX-1Y-orM" secondAttribute="trailing" id="ArU-a5-1vF"/>
+                            <constraint firstItem="ZC9-jh-A1g" firstAttribute="height" secondItem="0NX-1Y-orM" secondAttribute="height" id="EYg-WI-oCm"/>
+                            <constraint firstItem="lv0-fH-HGf" firstAttribute="top" secondItem="Zab-HA-wIa" secondAttribute="bottom" id="Fgv-Lv-Z8h"/>
+                            <constraint firstItem="Zab-HA-wIa" firstAttribute="leading" secondItem="WMZ-2u-vZk" secondAttribute="leading" id="FnJ-gI-nxU"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="trailing" secondItem="lv0-fH-HGf" secondAttribute="trailing" id="Gu0-zx-ij9"/>
+                            <constraint firstItem="lv0-fH-HGf" firstAttribute="leading" secondItem="WMZ-2u-vZk" secondAttribute="leading" id="I6p-rx-pri"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="trailing" secondItem="ZC9-jh-A1g" secondAttribute="trailing" id="MHN-NJ-YDE"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="trailing" secondItem="Ti7-gy-85P" secondAttribute="trailing" id="Uss-s0-lII"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="bottom" secondItem="ZC9-jh-A1g" secondAttribute="bottom" id="UtD-0N-wWO"/>
+                            <constraint firstItem="ZC9-jh-A1g" firstAttribute="leading" secondItem="WMZ-2u-vZk" secondAttribute="leading" id="Yuz-EA-tLs"/>
+                            <constraint firstItem="Zab-HA-wIa" firstAttribute="height" secondItem="0NX-1Y-orM" secondAttribute="height" id="bkf-BY-peY"/>
+                            <constraint firstItem="WMZ-2u-vZk" firstAttribute="trailing" secondItem="Zab-HA-wIa" secondAttribute="trailing" id="dTg-yn-0qU"/>
+                            <constraint firstItem="Zab-HA-wIa" firstAttribute="top" secondItem="Ti7-gy-85P" secondAttribute="bottom" id="hOA-DG-VHy"/>
+                            <constraint firstItem="Ti7-gy-85P" firstAttribute="width" secondItem="0NX-1Y-orM" secondAttribute="width" id="hYI-1s-has"/>
+                            <constraint firstItem="ZC9-jh-A1g" firstAttribute="width" secondItem="0NX-1Y-orM" secondAttribute="width" id="iKL-UI-eAw"/>
+                            <constraint firstItem="0NX-1Y-orM" firstAttribute="top" secondItem="WMZ-2u-vZk" secondAttribute="top" id="l4Y-ts-AoJ"/>
+                            <constraint firstItem="Zab-HA-wIa" firstAttribute="width" secondItem="0NX-1Y-orM" secondAttribute="width" id="pJE-RC-wK9"/>
+                            <constraint firstItem="lv0-fH-HGf" firstAttribute="width" secondItem="0NX-1Y-orM" secondAttribute="width" id="rt0-o4-htb"/>
+                            <constraint firstItem="Ti7-gy-85P" firstAttribute="height" secondItem="0NX-1Y-orM" secondAttribute="height" id="uiF-7g-qna"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WMZ-2u-vZk"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Second Tab " id="qi6-EK-UZX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wEe-ud-j2j" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="825" y="79"/>
+        </scene>
+    </scenes>
+</document>
